@@ -4,8 +4,12 @@ rild.libpath=/system/lib/libsec-ril.so
 ro.telephony.default_network=9
 telephony.lteOnGsmDevice=1
 
-
 # Camera
 camera2.portability.force_api=1
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
+
+#Device Name Temp Fix
+ro.build.product=hlte
+ro.product.model=hlte
+ro.product.device=hlte
