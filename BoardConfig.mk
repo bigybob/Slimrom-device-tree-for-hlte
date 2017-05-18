@@ -20,7 +20,7 @@ LOCAL_PATH := device/samsung/hlte
 TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hlte,hlteskt,hltektt,hlteatt,hltedcm,hltekdi,hltelgt,hlteusc,hltevzw,hltetmo,hltespr,hltecan,hlteeur,SM-N900S,SM-N900K,SM-N900T,SM-N900SPR,SM-N900W8,SM-N900A,SC-01F,SCL22,SM-N900L,SM-N900S,SM-N900P,SM-N900R4,SM-N900V
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
 TARGET_UNIFIED_DEVICE := true
 
@@ -45,3 +45,6 @@ BOARD_RIL_CLASS := ../../../device/samsung/hlte/ril
 
 # inherit from the proprietary version
 -include vendor/samsung/hlte/BoardConfigVendor.mk
+
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
