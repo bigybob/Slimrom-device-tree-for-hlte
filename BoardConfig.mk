@@ -46,5 +46,5 @@ BOARD_RIL_CLASS := ../../../device/samsung/hlte/ril
 # inherit from the proprietary version
 -include vendor/samsung/hlte/BoardConfigVendor.mk
 
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-7.x/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
